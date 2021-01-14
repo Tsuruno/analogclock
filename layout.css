@@ -1,25 +1,55 @@
-body{
-  background-color:#cccccc;
+body {
+  background-color: #cccccc;
 }
 
-.color{
-  width: 50%;
-  margin: 0 auto;
-  max-width: 1000px;
+p {
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0px 10px white;
+  font-weight: bold;
+}
+
+a {
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+}
+
+.c-clock_frame {
+  position: relative;
+  background-color: #cccccc;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #333;
+  border-radius: 50%;
 }
 
 .c-clock {
-  position: relative;
+  position: absolute;
+  background-color: #cccccc;
+  top: 25px;
+  left: 25px;
   width: 400px;
   height: 400px;
   border: 1px solid #333;
   border-radius: 50%;
 }
 
-.clockcentor{
-  position: relative;
-  top: calc(50%);
-  left: calc(50%);  border-radius: 50%;
+.clockcentor {
+  background: #333;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .c-clock__hour {
@@ -31,6 +61,7 @@ body{
   background: #333;
   transform-origin: bottom;
 }
+
 .c-clock__min {
   position: absolute;
   top: calc(50% - 180px);
@@ -40,6 +71,7 @@ body{
   background: #333;
   transform-origin: bottom;
 }
+
 .c-clock__sec {
   position: absolute;
   top: calc(50% - 200px);
@@ -49,6 +81,7 @@ body{
   background: #ff0000;
   transform-origin: bottom;
 }
+
 .c-clock__12 {
   position: absolute;
   top: 10px;
@@ -56,6 +89,7 @@ body{
   transform: translateX(-50%);
   font-size: 18px;
 }
+
 .c-clock__3 {
   position: absolute;
   top: 50%;
@@ -63,6 +97,7 @@ body{
   transform: translateY(-50%);
   font-size: 18px;
 }
+
 .c-clock__6 {
   position: absolute;
   bottom: 10px;
@@ -70,10 +105,24 @@ body{
   transform: translateX(-50%);
   font-size: 18px;
 }
+
 .c-clock__9 {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
   font-size: 18px;
+}
+
+.box {
+  background: white;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #000000;
+}
+
+.box p {
+  margin: 0;
+  padding: 0;
 }
