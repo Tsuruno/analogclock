@@ -10,9 +10,9 @@ setInterval(() => {
   const degM = m * (360 / 60);
   const degS = s * (360 / 60);
 
-  const colorH = h * 21;
-  const colorM = m * 4;
-  const colorS = s * 4;
+  const colorH = h * 10.625;
+  const colorM = m * 4.25;
+  const colorS = s * 4.25;
 
   // 各要素を取得
   const elementH = document.querySelector(".c-clock__hour");
